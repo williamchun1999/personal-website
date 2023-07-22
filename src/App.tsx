@@ -1,4 +1,4 @@
-import { Navbar } from "./components/navbar";
+import { Navbar } from "./components/Navbar";
 import { Banner } from "./components/Banner";
 import { AboutMe } from "./components/AboutMe";
 import { Experiences } from "./components/Experiences";
@@ -8,12 +8,15 @@ export const App = () => {
 
   return (
 
-    <div className="mx-12">
+    <div className="flex w-full flex-col items-center justify-center bg-black text-white">
       <Navbar />
-      <Banner />
-      <AboutMe />
-      <Experiences />
-      <Projects />
+      <div className="w-5/6 max-w-[1024px] flex flex-col items-center">
+        <Banner />
+        <AboutMe />
+        <Experiences />
+        <Projects />
+      </div>
+
 
       <footer id="footer">
         <ul className="icons">

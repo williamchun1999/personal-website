@@ -1,23 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Color Theme Swatches in Hex */
-.Tiesto-1-hex { color: #040506; }
-.Tiesto-2-hex { color: #505050; }
-.Tiesto-3-hex { color: #FFFFFF; }
-.Tiesto-4-hex { color: #7DDFDD; }
-.Tiesto-5-hex { color: #47BFBD; }
 
-/* Color Theme Swatches in RGBA */
-.Tiesto-1-rgba { color: rgba(4, 4, 5, 1); }
-.Tiesto-2-rgba { color: rgba(80, 80, 80, 1); }
-.Tiesto-3-rgba { color: rgba(255, 255, 255, 1); }
-.Tiesto-4-rgba { color: rgba(124, 223, 221, 1); }
-.Tiesto-5-rgba { color: rgba(70, 191, 188, 1); }
-
-/* Color Theme Swatches in HSLA */
-.Tiesto-1-hsla { color: hsla(0, 19, 1, 1); }
-.Tiesto-2-hsla { color: hsla(0, 0, 31, 1); }
-.Tiesto-3-hsla { color: hsla(0, 0, 100, 1); }
-.Tiesto-4-hsla { color: hsla(0, 60, 68, 1); }
-.Tiesto-5-hsla { color: hsla(0, 48, 51, 1); }

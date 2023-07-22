@@ -12,7 +12,7 @@ export default {
         "white":"#FFFFFF",
         "light-blue":"#7DDFDD",
         "light-green":"#47BFBD",
-      }
+      },
     },
   },
   plugins: [],
