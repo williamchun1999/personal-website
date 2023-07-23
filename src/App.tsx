@@ -10,7 +10,7 @@ export const App = () => {
 
     <div className="flex w-full flex-col items-center justify-center bg-black text-white">
       <Navbar />
-      <div className="w-5/6 max-w-[1024px] flex flex-col items-center">
+      <div className="max-w-[1024px] flex flex-col sm:w-5/6">
         <Banner />
         <AboutMe />
         <Experiences />
