@@ -9,9 +9,11 @@ import {
   BiLogoPython,
 } from "react-icons/bi";
 
-import { LogoItem } from "./LogoItem"
+import { LogoItem } from "./LogoItem";
 
 export const AboutMe = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const slides = [
     {
       url: "https://source.unsplash.com/XEB8y0nRRP4",
@@ -23,52 +25,6 @@ export const AboutMe = () => {
     //   url: "https://source.unsplash.com/xzUnX1k-tq4",
     // },
   ];
-  const text = [
-    <div className="text-white">
-      <h3 className="text-center sm:text-left mb-4 text-xl font-bold ">
-        Programming
-      </h3>
-      <p>
-        There are two main reasons for why I love coding: The continuous
-        learning, and a stream of new problems. Coding satisfies my itch in
-        constantly challenging myself to improve as in individual and to be in
-        an industry with those of the same mindset.
-      </p>
-      <h4 className="text-center sm:text-left text-lg font-bold mt-8">
-        Skills
-      </h4>
-      <ul className="flex gap-4  flex-wrap mt-4 text-xl w-full self-center text-white">
-        <LogoItem LogoImage={BiLogoTypescript} text="TypeScript" />
-        <LogoItem LogoImage={BiLogoReact} text="React" />
-        <LogoItem LogoImage={BiLogoNodejs} text="NodeJS" />
-        <LogoItem LogoImage={BiLogoAws} text="AWS" />
-        <LogoItem LogoImage={BiLogoPython} text="Python" />
-      </ul>
-    </div>,
-    <>
-      <h3 className="text-center sm:text-left mb-4 text-xl font-bold ">
-        Music
-      </h3>
-      <p>
-        I always enjoyed music since I was young. Self-taught myself drums for
-        my local church, joined my highschool choir, and always went karaoking
-        with friends! Mostly listening to Western or Korean music, but always
-        open to explore music from other countries. Follow my chill music
-        playlist :)
-      </p>
-      <iframe
-        src="https://open.spotify.com/embed/playlist/64Z0JvZXE8leOrPb8oQVCK?utm_source=generator&theme=0"
-        className="w-full mt-8"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-    </>,
-    <>
-      <h3 className="text-center mb-4 text-xl font-bold">Mixology</h3>
-    </>,
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -98,8 +54,57 @@ export const AboutMe = () => {
             className="w-full h-full rounded-2xl bg-center bg-cover duration-700 flex justify-center brightness-25"
           ></div>
 
-          <div className="absolute top-[15%] sm:top-[10%] lg:top-1/4 mx-4 sm:mx-32 my-4 sm:my-8 flex flex-col z-10">
-            {text[currentIndex]}
+          <div
+            className={`absolute top-[15%] sm:top-[10%] lg:top-1/4 mx-4 sm:mx-32 my-4 sm:my-8 flex flex-col`}
+          >
+            <div
+              className={`text-white ${
+                currentIndex === 0 ? `block` : `hidden`
+              }`}
+            >
+              <h3 className="text-center sm:text-left mb-4 text-xl font-bold ">
+                Programming
+              </h3>
+              <p>
+                There are two main reasons for why I love coding: The continuous
+                learning, and a stream of new problems. Coding satisfies my itch
+                in constantly challenging myself to improve as in individual and
+                to be in an industry with those of the same mindset.
+              </p>
+              <h4 className="text-center sm:text-left text-lg font-bold mt-8">
+                Skills
+              </h4>
+              <ul className="flex gap-4  flex-wrap mt-4 text-xl w-full self-center text-white">
+                <LogoItem LogoImage={BiLogoTypescript} text="TypeScript" />
+                <LogoItem LogoImage={BiLogoReact} text="React" />
+                <LogoItem LogoImage={BiLogoNodejs} text="NodeJS" />
+                <LogoItem LogoImage={BiLogoAws} text="AWS" />
+                <LogoItem LogoImage={BiLogoPython} text="Python" />
+              </ul>
+            </div>
+
+            <div className={`${currentIndex === 1 ? `block` : `hidden`}`}>
+              <h3 className="text-center sm:text-left mb-4 text-xl font-bold ">
+                Music
+              </h3>
+              <p>
+                I always enjoyed music since I was young. Self-taught myself
+                drums for my local church, joined my highschool choir, and
+                always went karaoking with friends! Mostly listening to Western
+                or Korean music, but always open to explore music from other
+                countries. Follow my chill music playlist :)
+              </p>
+              <iframe
+                src="https://open.spotify.com/embed/playlist/64Z0JvZXE8leOrPb8oQVCK?utm_source=generator&theme=0"
+                className="w-full mt-8"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div className={`${currentIndex === 2 ? `block` : `hidden`}`}>
+              <h3 className="text-center mb-4 text-xl font-bold">Mixology</h3>
+            </div>
           </div>
         </div>
 

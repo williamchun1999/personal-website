@@ -1,4 +1,7 @@
+import { BiLogoLinkedin, BiLogoGithub, BiLogoGmail } from "react-icons/bi";
+import { IoMdDocument } from "react-icons/io";
 import profilePhoto from "../assets/DSC02531.jpg";
+import { LogoItem } from "./LogoItem";
 
 export const Banner = () => {
   return (
@@ -28,6 +31,25 @@ export const Banner = () => {
             I like writing code, trying new music, and connecting with people!
           </p>
           <p>Reach out to me and tell me your favorite song ontop :)</p>
+          <ul className="flex gap-4  flex-wrap mt-4 text-xl w-full self-center">
+            <a href="https://www.linkedin.com/in/william-chun99/" target="_blank">
+              <LogoItem text="LinkedIn" LogoImage={BiLogoLinkedin} />
+
+            </a>
+            <a href="https://github.com/williamchun1999" target="_blank">
+              <LogoItem text="GitHub" LogoImage={BiLogoGithub} />
+
+            </a>
+            <a href="mailto:williamchun1999@gmail.com" target="_blank">
+              <LogoItem text="Email" LogoImage={BiLogoGmail} />
+
+            </a>
+            <a href="/williamchun_resume.pdf" target="_blank" rel="noreferrer">
+              <LogoItem text="Resume" LogoImage={IoMdDocument} />
+
+            </a>
+
+          </ul>
         </div>
 
         <img

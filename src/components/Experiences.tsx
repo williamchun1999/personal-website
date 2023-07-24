@@ -11,15 +11,21 @@ import { LogoItem } from "./LogoItem";
 export const Experiences = () => {
   return (
     <section id="experiences" className="mt-32">
-      <h3 className="text-2xl font-semibold">Experiences</h3>
-      <div className="flex my-16">
-        <img alt="spg" src={spg} className="max-h-32 w-1/4 object-scale-down" />
-        <div className="w-3/4 ml-8">
-          <div className="flex justify-between">
+      <h3 className="text-2xl font-semibold text-center sm:text-left">
+        Experiences
+      </h3>
+      <div className="flex-col sm:flex-row flex my-16">
+        <img
+          alt="spg"
+          src={spg}
+          className="max-h-32 w-full sm:w-1/4 object-scale-down"
+        />
+        <div className="sm:w-3/4 sm:ml-8 w-5/6 m-auto">
+          <div className="flex gap-4 sm:justify-between sm:flex-row flex-col">
             <h4>Full Stack Engineer (Full Time)</h4>
             <span>Apr 2022 - Nov 2022</span>
           </div>
-          <div className="flex justify-between">
+          <div className="flex gap-4 sm:justify-between sm:flex-row flex-col">
             <span>Sustainable Projects Group (SPG)</span>
             <span>Vancouver, BC, CAN</span>
           </div>
@@ -49,18 +55,18 @@ export const Experiences = () => {
           </ul>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex flex-col sm:flex-row">
         <img
           alt="gyu-kaku"
           src={gyukaku}
-          className="max-h-32 w-1/4 object-scale-down"
+          className="max-h-32 w-full sm:w-1/4 object-scale-down"
         />
-        <div className="w-3/4 ml-8">
-          <div className="flex justify-between">
+        <div className="sm:w-3/4 sm:ml-8 w-5/6 m-auto">
+          <div className="flex gap-4 sm:justify-between sm:flex-row flex-col">
             <h4>Waiter/Cook/Dishwasher (Part Time)</h4>
             <span>May 2018 - Jun 2019</span>
           </div>
-          <div className="flex justify-between">
+          <div className="flex gap-4 sm:justify-between sm:flex-row flex-col">
             <span>Gyu-Kaku Japanese BBQ Restaurant</span>
             <span>Vancouver, BC, CAN</span>
           </div>

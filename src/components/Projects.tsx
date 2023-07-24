@@ -8,8 +8,8 @@ export const Projects = () => {
   return (
     <section id="projects" className="mt-32">
       <h3 className="text-2xl font-semibold text-center">Projects</h3>
-      <div className="flex justify-between mt-8 bg-neutral-800 p-12 rounded-lg">
-        <div className="w-[45%]">
+      <div className="flex lg:justify-between lg:flex-row flex-col mt-8 bg-neutral-800 p-12 rounded-lg">
+        <div className="lg:w-[45%]">
           <a href="https://samsushi.netlify.app" target="_blank">
             <img
               src={samsushi}
@@ -34,7 +34,7 @@ export const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="w-[45%]">
+        <div className="lg:w-[45%]">
           <a href="https://jade-courageous-perch.cyclic.app" target="_blank">
             <img
               src={kea}
