@@ -4,7 +4,7 @@ export const Banner = () => {
   return (
     <main
       id="banner"
-      className="mt-32 py-16 w-5/6 sm:w-full"
+      className="mt-32 py-16 w-5/6 m-auto"
     >
       <div className="flex w-full flex-col items-center sm:flex-row sm:justify-between">
         <div className="flex flex-col mb-12 sm:mr-24 sm:mb-0 ease-in transition-transform">

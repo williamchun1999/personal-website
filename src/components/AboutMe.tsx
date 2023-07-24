@@ -9,6 +9,8 @@ import {
   BiLogoPython,
 } from "react-icons/bi";
 
+import { LogoItem } from "./LogoItem"
+
 export const AboutMe = () => {
   const slides = [
     {
@@ -36,26 +38,11 @@ export const AboutMe = () => {
         Skills
       </h4>
       <ul className="flex gap-4  flex-wrap mt-4 text-xl w-full self-center text-white">
-        <li className="bg-grey p-3 rounded-xl flex items-center shadow-md shadow-light-blue">
-          <BiLogoTypescript />
-          <span className="">Typescript</span>
-        </li>
-        <li className="bg-grey p-3 rounded-xl flex items-center shadow-md shadow-light-blue">
-          <BiLogoReact />
-          <span className="">React</span>
-        </li>
-        <li className="bg-grey p-3 rounded-xl flex items-center shadow-md shadow-light-blue">
-          <BiLogoNodejs />
-          <span className="">NodeJS</span>
-        </li>
-        <li className="bg-grey p-3 rounded-xl flex items-center shadow-md shadow-light-blue">
-          <BiLogoAws />
-          <span className="">AWS</span>
-        </li>
-        <li className="bg-grey p-3 rounded-xl flex items-center shadow-md shadow-light-blue">
-          <BiLogoPython />
-          <span className="">Python</span>
-        </li>
+        <LogoItem LogoImage={BiLogoTypescript} text="TypeScript" />
+        <LogoItem LogoImage={BiLogoReact} text="React" />
+        <LogoItem LogoImage={BiLogoNodejs} text="NodeJS" />
+        <LogoItem LogoImage={BiLogoAws} text="AWS" />
+        <LogoItem LogoImage={BiLogoPython} text="Python" />
       </ul>
     </div>,
     <>
