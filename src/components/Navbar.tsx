@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <header className="w-full flex bg-neutral-800 text-xl h-16 fixed top-0 items-center px-8 font-semibold z-50">
       <div className="sm:basis-1/4 align-middle">
-        <a href="index.html" className="hover:text-light-blue">
+        <a href="https://william-chun.netlify.app" className="hover:text-light-blue">
           William Chun
         </a>
       </div>
