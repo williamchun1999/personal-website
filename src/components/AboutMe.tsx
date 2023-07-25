@@ -68,7 +68,7 @@ export const AboutMe = () => {
               <p>
                 There are two main reasons for why I love coding: The continuous
                 learning, and a stream of new problems. Coding satisfies my itch
-                in constantly challenging myself to improve as in individual and
+                in constantly challenging myself to improve as an individual and
                 to be in an industry with those of the same mindset.
               </p>
               <h4 className="text-center sm:text-left text-lg font-bold mt-8">
